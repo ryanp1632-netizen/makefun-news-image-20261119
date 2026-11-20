@@ -99,23 +99,23 @@ const ARTS = {
     s += T(134, 38, 'fossil fuels', 13, '#555', 700, 'middle', 'Georgia, serif');
     s += `<path d="M92 34 L176 34" stroke="#c42127" stroke-width="3"/>`;
     for (let i = 0; i < 3; i++) s += `<path d="M94 ${48 + i * 7} H${174 - i * 18}" stroke="#c4cbcd" stroke-width="2.4"/>`;
-    s += flag('tr', 160, 52, 20);
+    s += flag('tr', 4, 4, 20);
     return s;
   },
   arctic() {
     let s = `<rect width="200" height="76" fill="#cfe6f5"/>`;
     s += `<path d="M70 10 Q96 0 124 8 Q140 18 132 36 Q126 52 108 66 Q98 72 92 60 Q80 46 72 30 Q66 18 70 10 Z" fill="#f7fbff" stroke="#8fb4cc" stroke-width="1.5"/>`;
     s += `<path d="M84 22 L96 18 L104 26" stroke="#b9d3e4" fill="none"/>`;
-    s += flag('dk', 8, 10, 30) + flag('gl', 8, 36, 30) + flag('us', 160, 22, 32);
-    s += `<rect x="140" y="52" width="54" height="18" rx="3" fill="#1b2a3a"/>` + T(167, 65, 'APPROVED', 9, '#9ff0b8', 900);
+    s += flag('dk', 8, 10, 30) + flag('gl', 8, 36, 30) + flag('us', 158, 26, 32);
+    s += `<rect x="140" y="4" width="54" height="17" rx="3" fill="#1b2a3a"/>` + T(167, 16, 'APPROVED', 9, '#9ff0b8', 900);
     return s;
   },
   capitol() {
     let s = sky(200, 76, '#dbe7f6', '#f4f8fd', 'cpsky');
     s += `<path d="M30 70 V48 H120 V70 Z" fill="#f4f1ea" stroke="#9aa1aa"/><path d="M50 48 Q75 14 100 48 Z" fill="#f4f1ea" stroke="#9aa1aa"/><rect x="73" y="10" width="4" height="10" fill="#9aa1aa"/>`;
     for (let i = 0; i < 8; i++) s += `<rect x="${36 + i * 11}" y="52" width="4" height="18" fill="#c9ced4"/>`;
-    s += `<rect x="128" y="10" width="64" height="56" rx="4" fill="#1b2a3a"/>`;
-    s += T(160, 26, 'WAR POWERS', 8.5, '#c9d6e6', 800) + T(160, 46, '48–51', 18, '#ff6b6b', 900, 'middle', 'Georgia, serif') + T(160, 60, 'REJECTED', 8.5, '#ff6b6b', 900);
+    s += `<rect x="128" y="5" width="64" height="41" rx="4" fill="#1b2a3a"/>`;
+    s += T(160, 16, 'WAR POWERS', 8, '#c9d6e6', 800) + T(160, 32.5, '48–51', 16, '#ff6b6b', 900, 'middle', 'Georgia, serif') + T(160, 42, 'REJECTED', 8, '#ff6b6b', 900);
     return s;
   },
   protest() {
@@ -148,13 +148,13 @@ const ARTS = {
   jobs() {
     let s = `<rect width="200" height="76" fill="#f4f7f2"/>`;
     s += flag('au', 8, 8, 34);
-    const bars = [[60, 4.3], [84, 4.5], [108, 4.5], [132, 4.7], [156, 4.9]];
+    const bars = [[52, 4.3], [74, 4.5], [96, 4.5], [118, 4.7], [140, 4.9]];
     for (const [x, v] of bars) {
       const h = (v - 3.8) * 48;
       s += `<rect x="${x}" y="${70 - h}" width="18" height="${h}" fill="${v === 4.9 ? '#c42127' : '#9fb7a8'}"/>`;
     }
-    s += T(140, 22, '4.9%', 13, '#c42127', 900, 'middle', 'Georgia, serif');
-    s += T(110, 36, '4.7%', 8, '#4b5c52', 700);
+    s += T(181, 34, '4.9%', 13, '#c42127', 900, 'middle', 'Georgia, serif');
+    s += T(127, 24, '4.7%', 8, '#4b5c52', 700);
     return s;
   },
   game() {

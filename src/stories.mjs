@@ -38,7 +38,7 @@ export const LEADS = [
     scene: 'summit', place: 'Shenzhen', region: 'Asia', cat: 'pol', lon: 114.06, lat: 22.54,
     label: 'APEC · SHENZHEN',
     head: 'Trump, Xi and Putin hold their first three-way summit',
-    sum: 'After more than an hour of talks they issue a “peace declaration” on UN reform and oil. It skips the wars in Ukraine and Iran.',
+    sum: 'After an hour of talks their “peace declaration” covers UN reform and oil, but leaves out the wars in Ukraine and Iran.',
     src: 'Guardian · Al Jazeera · BBC',
   },
   {
@@ -85,21 +85,21 @@ export const CARDS = [
     cap: 'GREENLAND PACT',
     head: 'Denmark approves US–Greenland pact',
     sum: 'MPs back it unanimously; the US may build missile defences there.',
-    src: 'Guardian · Al Jazeera',
+    src: 'Guardian · AJ',
   },
   {
     art: 'capitol', place: 'Washington', region: 'Americas', cat: 'pol', lon: -77.0, lat: 38.9,
     cap: 'US SENATE',
     head: 'Senate rejects bid to halt the Iran war, 48–51',
     sum: 'War powers resolution fails; three Republicans vote for it.',
-    src: 'Guardian · Al Jazeera',
+    src: 'Guardian · AJ',
   },
   {
     art: 'protest', place: 'Bangladesh', region: 'Asia', cat: 'pol', lon: 90.4, lat: 23.8,
     cap: 'DHAKA · LOCKDOWN',
     head: 'Clashes and blasts in Hasina lockdown',
     sum: 'Her party demands she be let back from exile; border guards deployed.',
-    src: 'Guardian · Al Jazeera',
+    src: 'Guardian · AJ',
   },
   {
     art: 'handshake', place: 'Caracas', region: 'Americas', cat: 'war', lon: -66.9, lat: 10.5,
@@ -127,36 +127,36 @@ export const CARDS = [
     cap: 'GTA VI · OUT NOW',
     head: 'GTA VI launches to rave reviews after 13 years',
     sum: 'Metacritic score of 99 as consoles unlock it from midnight.',
-    src: 'Al Jazeera · Guardian',
+    src: 'AJ · Guardian',
   },
 ];
 
 // Short items. place is the bold prefix and the map pin.
 export const BRIEFS = [
-  { place: 'Kyiv', region: 'Europe', cat: 'war', lon: 30.5, lat: 50.45, text: 'Blasts; drone reported near Dutch embassy.', src: 'Guardian' },
+  { place: 'Kyiv', region: 'Europe', cat: 'war', lon: 30.5, lat: 50.45, text: 'Blasts; drone reported near Dutch embassy.', src: 'Guardian', sure: 'claim' },
   { place: 'Berlin', region: 'Europe', cat: 'pol', lon: 13.4, lat: 52.52, text: 'EU leaders back Kyiv; Merz: summit a “photo op”.', src: 'AJ' },
   { place: 'Shenzhen', region: 'Asia', cat: 'pol', lon: 114.06, lat: 22.54, text: 'Albanese to Putin: “End your war, end it now.”', src: 'Guardian' },
-  { place: 'Gaza', region: 'Middle East', cat: 'war', lon: 34.45, lat: 31.5, text: 'Israeli raid past Yellow Line; Hamas: truce breach.', src: 'BBC' },
+  { place: 'Gaza', region: 'Middle East', cat: 'war', lon: 34.45, lat: 31.5, text: 'Raid past Yellow Line; Hamas: truce breach.', src: 'BBC', sure: 'claim' },
   { place: 'Seoul', region: 'Asia', cat: 'pol', lon: 126.98, lat: 37.57, text: 'Ex-PM Han to be retried over martial law.', src: 'AJ' },
   { place: 'Jakarta', region: 'Asia', cat: 'pol', lon: 106.85, lat: -6.2, text: 'Parliament passes asset-forfeiture law.', src: 'BBC' },
-  { place: 'Odisha', region: 'Asia', cat: 'sci', lon: 85.8, lat: 19.8, text: 'Coast braces for Cyclone Akvan, due Friday.', src: 'PTI' },
+  { place: 'Odisha', region: 'Asia', cat: 'sci', lon: 85.8, lat: 19.8, text: 'Coast braces for Cyclone Akvan, due Friday.', src: 'PTI', sure: 'forecast' },
   { place: 'Baghdad', region: 'Middle East', cat: 'war', lon: 44.4, lat: 33.3, text: 'Deal with Kataib Hezbollah on its stronghold.', src: 'AJ' },
-  { place: 'Doha', region: 'Middle East', cat: 'cul', lon: 51.53, lat: 25.29, text: 'Under-17 World Cup kicks off, 48 teams.', src: 'AJ' },
+  { place: 'Pretoria', region: 'Africa', cat: 'eco', lon: 28.19, lat: -25.75, text: 'Central bank holds rates at 7.25%.', src: 'SAnews' },
   { place: 'Tbilisi', region: 'Europe', cat: 'war', lon: 44.8, lat: 41.7, text: 'Gas blast kills six; girl, 3, found alive.', src: 'AJ' },
   { place: 'London', region: 'Europe', cat: 'sci', lon: -0.13, lat: 51.5, text: 'Covid inquiry: UK was “woefully ill-prepared”.', src: 'BBC' },
   { place: 'Brussels', region: 'Europe', cat: 'pol', lon: 4.35, lat: 50.85, text: 'UK–EU deal near: 100,000 youth visas a year.', src: 'Guardian' },
   { place: 'Paris', region: 'Global', cat: 'sci', lon: 2.35, lat: 48.86, text: 'IEA: datacentre CO₂ to rise 70% by 2030.', src: 'Guardian' },
-  { place: 'Zurich', region: 'Europe', cat: 'cul', lon: 8.54, lat: 47.37, text: 'Two rivals confirmed to face Infantino.', src: 'AJ' },
-  { place: 'Kenya', region: 'Africa', cat: 'cul', lon: 36.82, lat: -1.29, text: 'Marathon champ Jepchirchir banned 3 yrs.', src: 'AIU' },
+  { place: 'Kenya', region: 'Africa', cat: 'eco', lon: 39.3, lat: -4.4, text: 'US group picked for Mrima Hill rare earths.', src: 'Reuters' },
+  { place: 'Nairobi', region: 'Africa', cat: 'cul', lon: 36.82, lat: -1.29, text: 'Marathon champ Jepchirchir banned 3 yrs.', src: 'AIU' },
   { place: 'Africa', region: 'Africa', cat: 'sci', lon: 2.0, lat: 10.0, text: 'UN: 45% of wives in W. Africa can’t refuse sex.', src: 'UNFPA' },
-  { place: 'Haiti', region: 'Americas', cat: 'war', lon: -72.34, lat: 18.54, text: 'Police raid kills 34 suspected gang members.', src: 'AJ' },
+  { place: 'Haiti', region: 'Americas', cat: 'war', lon: -72.34, lat: 18.54, text: 'Police say raid killed 34 gang suspects.', src: 'AJ', sure: 'claim' },
   { place: 'Los Angeles', region: 'Americas', cat: 'sci', lon: -118.24, lat: 34.05, text: 'Storm floods streets; drivers rescued.', src: 'Guardian' },
   { place: 'US', region: 'Americas', cat: 'eco', lon: -77.0, lat: 38.9, text: 'Cleared ~900,000 AI chips for China in 6 months.', src: 'AJ' },
   { place: 'US', region: 'Americas', cat: 'cul', lon: -77.0, lat: 38.9, text: 'Trump pardons late baseball great Pete Rose.', src: 'Guardian' },
-  { place: 'Nvidia', region: 'Americas', cat: 'eco', lon: -121.96, lat: 37.35, text: 'Courts Arm’s Rene Haas as CEO, reports say.', src: 'Guardian' },
+  { place: 'Nvidia', region: 'Americas', cat: 'eco', lon: -121.96, lat: 37.35, text: 'Eyes Arm’s Rene Haas as next CEO.', src: 'Guardian', sure: 'claim' },
   { place: 'Pennsylvania', region: 'Americas', cat: 'sci', lon: -77.2, lat: 40.9, text: 'Unvaccinated resident dies of measles.', src: 'AJ' },
-  { place: 'Argentina', region: 'Americas', cat: 'cul', lon: -58.4, lat: -34.6, text: 'Mourns footballer Abel Núñez, 16.', src: 'AJ' },
-  { place: 'Cincinnati', region: 'Americas', cat: 'cul', lon: -84.5, lat: 39.1, text: 'Fiona the hippo dies after swallowing a hat.', src: 'BBC' },
+  { place: 'Brazil', region: 'Americas', cat: 'pol', lon: -53.0, lat: -10.5, text: 'Lula visits Chief Raoni, recognises his land.', src: 'AFP' },
+  { place: 'Colombia', region: 'Americas', cat: 'pol', lon: -74.07, lat: 4.71, text: 'Thousands march in national strike on tax bill.', src: 'BioBio' },
   { place: 'Australia', region: 'Oceania', cat: 'cul', lon: 145.8, lat: -16.9, text: 'Wreck of first home-built warship revealed.', src: 'Guardian' },
   { place: 'Sydney', region: 'Oceania', cat: 'eco', lon: 151.2, lat: -33.87, text: 'General Pants Co collapses; ~500 jobs at risk.', src: 'Guardian' },
 ];
@@ -172,4 +172,10 @@ export const LEFT_OUT = [
 ];
 export const STILL_TO_COME = ['Cyclone Akvan landfall', 'COP31 final deal (Fri 20)'];
 
-export const SOURCES = 'Guardian, Al Jazeera (AJ), BBC, AIU, ABS, UNFPA, IEA, PTI';
+export const SURE = {
+  reported: { label: 'REPORTED', color: '#13804a', means: 'confirmed by named sources' },
+  claim: { label: 'CLAIM', color: '#c87000', means: 'one side says so, not verified' },
+  forecast: { label: 'FORECAST', color: '#2257c7', means: 'expected, not yet happened' },
+};
+
+export const SOURCES = 'Guardian, Al Jazeera (AJ), BBC, Reuters, AFP, SAnews, BioBioChile, AIU, ABS, UNFPA, IEA, PTI';
